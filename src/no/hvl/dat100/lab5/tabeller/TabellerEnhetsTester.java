@@ -60,6 +60,9 @@ class TabellerEnhetsTester {
 		
 		 int[] tabell = { 6, 4, 1 };
 			
+		 Tabeller.skrivUt(tabell);
+		 Tabeller.skrivUt(tabell1);
+
 		 assertArrayEquals(tabell,Tabeller.reverser(tabell1));
 		 assertArrayEquals(tabell2,Tabeller.reverser(tabell2));
 		 assertArrayEquals(tabell3,Tabeller.reverser(tabell3));
