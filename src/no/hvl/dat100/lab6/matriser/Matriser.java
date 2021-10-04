@@ -1,4 +1,4 @@
-package no.hvl.dat100.lab6.matriser;
+package no.hvl.dat100.lab6.matriser; // :)
 
 public class Matriser {
 
@@ -37,7 +37,6 @@ public class Matriser {
 		String tekstA = tilStreng(a);
 		String tekstB = tilStreng(b);
 		return tekstA.equals(tekstB);
-		
 	}
 	
 	// e)
@@ -53,6 +52,14 @@ public class Matriser {
 
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
-		
+		int[][] c = new int[a.length][];	
+		for (int x = 0; x < a.length; x++) {
+			c[x] = new int[b[x].length];
+			for (int y = 0; y < b[x].length; y++) {
+				for (int z = 0; z < b[x].length; z++) {
+					c[x][y] += a[x][z]*b[z][y];
+				}
+			}
+		} return c;
 	}
 }
